@@ -1,0 +1,7 @@
+# Default: no primary port set. Port 1 is a privileged port nothing
+# ever listens on inside this container, so the proxy_pass to it
+# always fails fast (connection refused) and falls back to the
+# landing page via the error_page directive in nginx.conf.
+# scripts/set-primary-port.sh overwrites this file (and reloads nginx)
+# when the agent designates a real primary port.
+set $active_port 1;

@@ -1,0 +1,7 @@
+name: primary-port
+version: "1.0.0"
+description: "Set, clear, or check which local port is served at the Space's true root (/) with zero path-prefix rewriting — for apps with client-side routing (React/Vue/etc.) that break under /<port>/."
+provides_tools:
+  - set_primary_port
+  - clear_primary_port
+  - get_primary_port
